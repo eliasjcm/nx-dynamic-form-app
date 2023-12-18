@@ -1,0 +1,41 @@
+.thank-you-page {
+    max-width: 50vw;
+}
+
+.fields-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 20px;
+    max-width: 80%;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+
+.multiple-fields-container {
+    display: flex;
+    /* border: 1px solid #ccc; */
+}
+
+@media (max-width: 768px) {
+    .multiple-fields-container {
+        flex-direction: column;
+    }
+
+    .multiple-fields-container>*+* {
+        border-top: 1px solid #ccc;
+    }
+
+    .thank-you-page {
+        max-width: 90vw;
+    }
+}
+
+.fields-container>*+* {
+    border-top: 1px solid #ccc;
+}
+
+.description {
+    font-style: italic;
+    font-weight: 600;
+    font-size: 1.2em;
+}

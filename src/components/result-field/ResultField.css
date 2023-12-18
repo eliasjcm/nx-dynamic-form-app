@@ -1,0 +1,27 @@
+.field-result-container {
+    display: flex;
+    padding: 10px;
+}
+
+@media (min-width: 769px) {
+    .multiple-fields-container .field-result-container {
+        flex: 1 1 0;
+        width: 0;
+    }
+}
+
+.field-result-name {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.field-result-value {
+    max-width: 100%;
+    overflow-wrap: break-word;
+    text-align: left;
+    overflow: auto
+}
+
+.field-result-value-blank {
+    font-style: italic;
+}
